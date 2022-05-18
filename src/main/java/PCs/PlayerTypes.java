@@ -5,7 +5,8 @@ public enum PlayerTypes {
     KNIGHT(10, 3, 3, 2),
     BARBARIAN(12, 4, 2, 1),
     WIZARD(6, 1, 2, 4),
-    SORCERER(7, 2, 2, 3);
+    SORCERER(7, 2, 2, 3),
+    CLERIC(9, 3, 2, 3);
 
     public final int health;
     public final int strength;
