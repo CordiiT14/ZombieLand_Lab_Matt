@@ -12,8 +12,7 @@ public class Cleric extends Player {
     }
 
     public Cleric(String name, IHeal potion) {
-        super(name);
-        this.playerType = PlayerTypes.CLERIC;
+        super(name, PlayerTypes.CLERIC);
         this.potion = potion;
     }
 

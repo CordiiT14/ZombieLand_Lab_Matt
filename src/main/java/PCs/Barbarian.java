@@ -13,9 +13,9 @@ public class Barbarian extends Player{
     IWeapon weapon;
 
     public Barbarian(String name, IWeapon weapon) {
-        super(name);
+        super(name, PlayerTypes.BARBARIAN);
         this.weapon = weapon;
-        this.playerType = PlayerTypes.BARBARIAN;
+
 
     }
 

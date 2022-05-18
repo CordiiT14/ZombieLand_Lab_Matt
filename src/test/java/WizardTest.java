@@ -29,10 +29,10 @@ public class WizardTest {
     @Test
     public void hasAttributes(){
         assertEquals("Kevin", wizard.getName());
-        assertEquals(6, wizard.getPlayerType().getHealth());
-        assertEquals(1, wizard.getPlayerType().getStrength());
-        assertEquals(2, wizard.getPlayerType().getDexterity());
-        assertEquals(4, wizard.getPlayerType().getIntelligence());
+        assertEquals(6, wizard.getHealth());
+        assertEquals(1, wizard.getStrength());
+        assertEquals(2, wizard.getDexterity());
+        assertEquals(4, wizard.getIntelligence());
         assertEquals(waterWraith, wizard.getFamiliar());
         assertEquals(fireball, wizard.getSpell());
     }

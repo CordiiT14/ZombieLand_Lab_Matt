@@ -8,8 +8,7 @@ public class Knight extends Player{
    IWeapon weapon;
 
     public Knight(String name, IWeapon weapon) {
-        super(name);
-        this.playerTypes = PlayerTypes.KNIGHT;
+        super(name, PlayerTypes.KNIGHT);
         this.weapon = weapon;
     }
 

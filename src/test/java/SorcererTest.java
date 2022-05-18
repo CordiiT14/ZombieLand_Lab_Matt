@@ -29,10 +29,10 @@ public class SorcererTest {
     @Test
     public void hasAttributes(){
         assertEquals("Max", sorcerer.getName());
-        assertEquals(7, sorcerer.getPlayerType().getHealth());
-        assertEquals(2, sorcerer.getPlayerType().getStrength());
-        assertEquals(2, sorcerer.getPlayerType().getDexterity());
-        assertEquals(3, sorcerer.getPlayerType().getIntelligence());
+        assertEquals(7, sorcerer.getHealth());
+        assertEquals(2, sorcerer.getStrength());
+        assertEquals(2, sorcerer.getDexterity());
+        assertEquals(3, sorcerer.getIntelligence());
         assertEquals(fireball, sorcerer.getSpell());
         assertEquals(familiar, sorcerer.getFamiliar());
     }

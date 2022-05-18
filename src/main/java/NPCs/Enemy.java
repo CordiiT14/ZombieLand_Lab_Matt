@@ -1,5 +1,7 @@
 package NPCs;
 
+import PCs.Player;
+
 public abstract class Enemy {
 
     int health;
@@ -12,6 +14,10 @@ public abstract class Enemy {
 
     public void takeDamage(int damageTaken){
         this.health -= damageTaken;
+    }
+
+    public void attackPlayer(Player player){
+        player.takeHit(this.damage);
     }
 
     public int getHealth() {

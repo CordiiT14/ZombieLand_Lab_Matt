@@ -10,8 +10,7 @@ public class Wizard extends Player{
     IDefend familiar;
 
     public Wizard(String name, ISpell spell, IDefend familiar) {
-        super(name);
-        playerType = PlayerTypes.WIZARD;
+        super(name, PlayerTypes.WIZARD);
         this.spell = spell;
         this.familiar = familiar;
     }
@@ -24,9 +23,6 @@ public class Wizard extends Player{
         return familiar;
     }
 
-    public PlayerTypes getPlayerType() {
-        return playerType;
-    }
 
     public ISpell switchSpell(ISpell spell) {
         ISpell remove = getSpell();

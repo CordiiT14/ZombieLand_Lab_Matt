@@ -1,6 +1,8 @@
 import NPCs.HawkingZombie;
 import NPCs.HomerZombie;
 import NPCs.NinjaZombie;
+import PCs.Rogue;
+import items.Dagger;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -11,12 +13,17 @@ public class EnemyTest {
     NinjaZombie ninja;
     HawkingZombie hawking;
     HomerZombie homer;
+    Rogue rogue;
+    Dagger dagger;
 
     @Before
     public void before(){
+        dagger = new Dagger();
+        rogue = new Rogue("Cordii", dagger);
         homer = new HomerZombie();
         hawking = new HawkingZombie();
         ninja = new NinjaZombie();
+
     }
 
     @Test
@@ -37,5 +44,11 @@ public class EnemyTest {
         assertEquals(0, homer.getHealth());
         assertEquals(3, ninja.getHealth());
         assertEquals(1, hawking.getHealth());
+    }
+
+    @Test
+    public void canHitThePlayer(){
+        homer.attackPlayer(rogue);
+        assertEquals(7, rogue.getHealth());
     }
 }

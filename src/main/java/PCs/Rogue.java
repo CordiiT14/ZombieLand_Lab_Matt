@@ -11,8 +11,7 @@ public class Rogue extends Player{
     IWeapon weapon;
 
     public Rogue(String name, IWeapon weapon) {
-        super(name);
-        this.playerType = PlayerTypes.ROGUE;
+        super(name, PlayerTypes.ROGUE);
         this.weapon = weapon;
 
     }

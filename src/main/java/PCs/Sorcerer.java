@@ -11,8 +11,7 @@ public class Sorcerer extends Player{
     IDefend familiar;
 
     public Sorcerer(String name, ISpell spell, IDefend familiar) {
-        super(name);
-        this.playerType = PlayerTypes.SORCERER;
+        super(name, PlayerTypes.SORCERER);
         this.spell = spell;
         this.familiar = familiar;
     }
@@ -21,9 +20,6 @@ public class Sorcerer extends Player{
         return spell;
     }
 
-    public PlayerTypes getPlayerType() {
-        return playerType;
-    }
 
     public IDefend getFamiliar() {
         return familiar;

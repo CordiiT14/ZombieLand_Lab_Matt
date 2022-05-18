@@ -19,10 +19,10 @@ public class BarbarianTest {
     @Test
     public void hasAttributes(){
         assertEquals("Matt", barbarian.getName());
-        assertEquals(12, barbarian.getPlayerType().getHealth());
-        assertEquals(4, barbarian.getPlayerType().getStrength());
-        assertEquals(2, barbarian.getPlayerType().getDexterity());
-        assertEquals(1, barbarian.getPlayerType().getIntelligence());
+        assertEquals(12, barbarian.getHealth());
+        assertEquals(4, barbarian.getStrength());
+        assertEquals(2, barbarian.getDexterity());
+        assertEquals(1, barbarian.getIntelligence());
     }
 
     @Test

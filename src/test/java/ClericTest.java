@@ -26,10 +26,10 @@ public class ClericTest {
     @Test
     public void hasAttributes(){
         assertEquals("Claire", cleric.getName());
-        assertEquals(9, cleric.getPlayerType().getHealth());
-        assertEquals(3, cleric.getPlayerType().getStrength());
-        assertEquals(2, cleric.getPlayerType().getDexterity());
-        assertEquals(3, cleric.getPlayerType().getIntelligence());
+        assertEquals(9, cleric.getHealth());
+        assertEquals(3, cleric.getStrength());
+        assertEquals(2, cleric.getDexterity());
+        assertEquals(3, cleric.getIntelligence());
         assertEquals(potion, cleric.getPotion());
     }
 

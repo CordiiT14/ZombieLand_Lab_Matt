@@ -10,6 +10,7 @@ public class RogueTest {
     PCs.Rogue rogue;
     Dagger dagger;
 
+
     @Before
     public void before(){
         dagger = new Dagger();
@@ -19,12 +20,16 @@ public class RogueTest {
     @Test
     public void hasAttributes(){
         assertEquals("Cordii", rogue.getName());
-        assertEquals(8, rogue.getPlayerType().getHealth());
-        assertEquals(2, rogue.getPlayerType().getStrength());
-        assertEquals(4, rogue.getPlayerType().getDexterity());
-        assertEquals(2, rogue.getPlayerType().getIntelligence());
+        assertEquals(8, rogue.getHealth());
+        assertEquals(2, rogue.getStrength());
+        assertEquals(4, rogue.getDexterity());
+        assertEquals(2, rogue.getIntelligence());
         assertEquals(dagger, rogue.getWeapon());
     }
 
-
+    @Test
+    public void canTakeAHit() {
+        rogue.takeHit(1);
+        assertEquals(7, rogue.getHealth());
+    }
 }

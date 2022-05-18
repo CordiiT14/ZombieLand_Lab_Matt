@@ -23,10 +23,10 @@ public class KnightTest {
     @Test
     public void hasAttributes(){
         assertEquals("Jon", knight.getName());
-        assertEquals(10, knight.getPlayerType().getHealth());
-        assertEquals(3, knight.getPlayerType().getStrength());
-        assertEquals(3, knight.getPlayerType().getDexterity());
-        assertEquals(2, knight.getPlayerType().getIntelligence());
+        assertEquals(10, knight.getHealth());
+        assertEquals(3, knight.getStrength());
+        assertEquals(3, knight.getDexterity());
+        assertEquals(2, knight.getIntelligence());
         assertEquals(dagger, knight.getWeapon());
     }
 
