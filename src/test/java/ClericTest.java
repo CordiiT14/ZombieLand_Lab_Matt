@@ -1,4 +1,5 @@
 import PCs.Cleric;
+import PCs.Player;
 import behaviours.IHeal;
 import items.LayOnHands;
 import items.Potion;
