@@ -20,4 +20,10 @@ public class Cleric extends Player {
     public PlayerTypes getPlayerType() {
         return playerType;
     }
+
+    public IHeal switchHealingMethod(IHeal newHeal){
+        IHeal remove = getPotion();
+        this.potion = newHeal;
+        return remove;
+    }
 }

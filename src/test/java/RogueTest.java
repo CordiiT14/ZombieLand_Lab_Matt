@@ -19,10 +19,10 @@ public class RogueTest {
     @Test
     public void hasAttributes(){
         assertEquals("Cordii", rogue.getName());
-        assertEquals(8, rogue.getPlayerType().health);
-        assertEquals(2, rogue.getPlayerType().strength);
-        assertEquals(4, rogue.getPlayerType().dexterity);
-        assertEquals(2, rogue.getPlayerType().intelligence);
+        assertEquals(8, rogue.getPlayerType().getHealth());
+        assertEquals(2, rogue.getPlayerType().getStrength());
+        assertEquals(4, rogue.getPlayerType().getDexterity());
+        assertEquals(2, rogue.getPlayerType().getIntelligence());
         assertEquals(dagger, rogue.getWeapon());
     }
 

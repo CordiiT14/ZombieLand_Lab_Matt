@@ -8,10 +8,10 @@ public enum PlayerTypes {
     SORCERER(7, 2, 2, 3),
     CLERIC(9, 3, 2, 3);
 
-    public final int health;
-    public final int strength;
-    public final int dexterity;
-    public final int intelligence;
+    private final int health;
+    private final int strength;
+    private final int dexterity;
+    private final int intelligence;
 
     PlayerTypes(int health, int strength, int dexterity, int intelligence){
         this.health = health;

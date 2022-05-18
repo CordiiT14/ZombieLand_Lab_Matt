@@ -23,4 +23,9 @@ public class Barbarian extends Player{
         return playerType;
     }
 
+    public IWeapon switchWeapon(IWeapon weapon) {
+        IWeapon remove = getWeapon();
+        this.weapon = weapon;
+        return remove;
+    }
 }

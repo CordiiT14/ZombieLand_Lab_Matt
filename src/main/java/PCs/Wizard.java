@@ -27,4 +27,17 @@ public class Wizard extends Player{
     public PlayerTypes getPlayerType() {
         return playerType;
     }
+
+    public ISpell switchSpell(ISpell spell) {
+        ISpell remove = getSpell();
+        this.spell = spell;
+        return remove;
+    }
+
+
+    public IDefend switchFamiliar(IDefend familiar){
+        IDefend remove = getFamiliar();
+        this.familiar = familiar;
+        return remove;
+    }
 }

@@ -17,10 +17,13 @@ public class Knight extends Player{
         return weapon;
     }
 
-    //
     public PlayerTypes getPlayerType() {
         return playerTypes;
     }
 
-
+    public IWeapon switchWeapon(IWeapon weapon){
+        IWeapon remove = getWeapon();
+        this.weapon = weapon;
+        return remove;
+    }
 }

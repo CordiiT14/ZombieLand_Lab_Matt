@@ -24,4 +24,10 @@ public class Rogue extends Player{
     public IWeapon getWeapon() {
         return weapon;
     }
+
+    public IWeapon switchWeapon(IWeapon weapon) {
+        IWeapon remove = getWeapon();
+        this.weapon = weapon;
+        return remove;
+    }
 }

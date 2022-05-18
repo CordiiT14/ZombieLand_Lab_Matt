@@ -15,4 +15,9 @@ public class WaterWraith implements IDefend {
     public int defend() {
         return this.defend;
     }
+
+
+    public int getHealth() {
+        return health;
+    }
 }
