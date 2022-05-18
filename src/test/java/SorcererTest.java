@@ -1,4 +1,5 @@
 import PCs.Sorcerer;
+import items.Fireball;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -7,10 +8,12 @@ import static org.junit.Assert.assertEquals;
 public class SorcererTest {
 
     Sorcerer sorcerer;
+    Fireball fireball;
 
     @Before
     public void before(){
-        sorcerer = new Sorcerer("Max");
+        fireball = new Fireball();
+        sorcerer = new Sorcerer("Max", fireball);
     }
 
     @Test
@@ -20,5 +23,6 @@ public class SorcererTest {
         assertEquals(2, sorcerer.getPlayerType().strength);
         assertEquals(2, sorcerer.getPlayerType().dexterity);
         assertEquals(3, sorcerer.getPlayerType().intelligence);
+        assertEquals(fireball, sorcerer.getSpell());
     }
 }

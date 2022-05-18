@@ -1,4 +1,5 @@
 import PCs.Barbarian;
+import items.Dagger;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -7,10 +8,12 @@ import static org.junit.Assert.assertEquals;
 public class BarbarianTest {
 
     Barbarian barbarian;
+    Dagger dagger;
 
     @Before
     public void before(){
-        barbarian = new Barbarian("Matt");
+        dagger = new Dagger();
+        barbarian = new Barbarian("Matt", dagger);
     }
 
     @Test
@@ -20,5 +23,10 @@ public class BarbarianTest {
         assertEquals(4, barbarian.getPlayerType().strength);
         assertEquals(2, barbarian.getPlayerType().dexterity);
         assertEquals(1, barbarian.getPlayerType().intelligence);
+    }
+
+    @Test
+    public void hasWeapon(){
+        assertEquals(dagger, barbarian.getWeapon());
     }
 }
